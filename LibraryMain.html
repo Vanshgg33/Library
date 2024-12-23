@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Login</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Overlay for better contrast */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            z-index: 1;
+        }
+
+        /* Container Styling */
+        .container {
+            position: relative;
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            width: 400px;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            z-index: 2;
+            color: #fff;
+        }
+
+        /* Form Section */
+        .auth-box h2 {
+            color: #fff;
+            margin-bottom: 1em;
+            font-weight: 700;
+            font-size: 1.8em;
+        }
+
+        /* Form Labels */
+        .auth-box label {
+            font-size: 1em;
+            color: #e0e0e0;
+            display: block;
+            text-align: left;
+            margin: 0.5em 0 0.2em;
+        }
+
+        /* Input Fields */
+        .auth-box input[type="text"], .auth-box input[type="password"] {
+            width: 100%;
+            padding: 0.8em;
+            margin-bottom: 1.2em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .auth-box input[type="text"]:focus, .auth-box input[type="password"]:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+            outline: none;
+        }
+
+        /* Submit Button */
+        .auth-box button {
+            width: 100%;
+            padding: 0.8em;
+            margin-top: 0.5em;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #66bb6a, #43a047);
+            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .auth-box button:hover {
+            background: linear-gradient(135deg, #43a047, #2e7d32);
+            transform: translateY(-2px);
+        }
+
+        /* Hyperlinks */
+        .auth-box .register-link {
+            margin-top: 1.2em;
+            font-size: 0.9em;
+            color: #b2ff59;
+        }
+
+        .auth-box .register-link a {
+            color: #b2ff59;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .auth-box .register-link a:hover {
+            color: #69f0ae;
+        }
+
+        .auth-box .employee-link {
+            margin-top: 0.5em;
+            font-size: 0.9em;
+            color: #b2ff59;
+        }
+
+        .auth-box .employee-link a {
+            color: #b2ff59;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .auth-box .employee-link a:hover {
+            color: #69f0ae;
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <!-- User Login Section -->
+        <div class="auth-box user-auth">
+            <h2>User Login</h2>
+            <form  action="AfterLoginUser" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" placeholder="Enter your password" required>
+                <button type="submit" name="btn">Login</button>
+            </form>
+
+            <!-- Register Section Link -->
+            <p class="register-link">
+                New here? <a href="UserRegister.html">Create an account</a>.
+            </p>
+
+            <!-- Employee Login Link -->
+            <p class="employee-link">
+                Employee? <a href="LibrarianLogin.html">Login here</a>.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

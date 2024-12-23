@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Registration</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling with Gradient Background */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Container Styling */
+    .container {
+      background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    /* Form Heading */
+    .container h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+
+    /* Form Elements Styling */
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #666;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form select {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #f0f8ff;
+    }
+
+    form button {
+      width: 100%;
+      padding: 0.8rem;
+      background: #ff6f91;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #ff4e6d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Library User Registration</h1>
+    <form action=UserInforegiser method="get">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="text" id="password" name="password" required>
+
+      <button type="submit" name="btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

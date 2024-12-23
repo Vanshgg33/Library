@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Selection</title>
+  <style>
+    body {
+      background-color: #ADD8E6;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .button-container {
+      display: inline-block;
+    }
+    .styled-button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 0 15px; /* Add horizontal space between buttons */
+    }
+    /* Different button colors */
+    .btn-insert {
+      background-color: #FFB6C1; 
+      color: white;
+    }
+    .btn-insert:hover {
+      background-color: #ff9999; 
+    }
+    .btn-view {
+      background-color: #87CEEB;
+      color: white;
+    }
+    .btn-view:hover {
+      background-color: #5db9e5; 
+    }
+    .btn-edit {
+      background-color: #98FB98; 
+      color: white;
+    }
+    .btn-edit:hover {
+      background-color: rgb(128, 64, 0); 
+    }
+.btn-viewprofile:hover {
+    background-color: #ff9999;
+    color: white;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>Welcome, choose the task you want to do:</p>
+    <div class="button-container">
+      <form action="Toinsert.html" method="get" style="display: inline-block;">
+        <input type="submit" value="Insert" class="styled-button btn-insert">
+      </form>
+      <form action="View" style="display: inline-block;">
+        <input type="submit" value="View Books" class="styled-button btn-view">
+      </form>
+      <form action="EDIT.html" style="display: inline-block;">
+        <input type="submit" value="Edit Details" class="styled-button btn-edit">
+      </form>
+      <form action = "UserProfiles" style = "display: inline-block;">
+      <input type = "submit" value = "Veiw Profiles" class = "styled-button btn-veiwprofile">
+       </form>
+    </div>
+  </div>
+</body>
+</html>

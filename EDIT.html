@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+    body {
+      background-color: #ADD8E6;
+      font-family: Arial, sans-serif;
+    }
+    fieldset {
+      border: 2px solid #4CAF50;
+      padding: 20px;
+      width: 300px;
+      margin: auto;
+    }
+    label, input, select {
+      display: block;
+      margin: 10px 0;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+</style>
+<body>
+<p>What do you want to Edit</p>
+<fieldset> 
+<form action="Update" method="get">
+    <label for="fname">Field You Want to Edit:</label>
+    <select id="fname" name="fname" required>
+        <option value="">--Select Field--</option>
+        <option value="Name">Name Of Book</option>  
+        <option value="GenreOfthebook">Genre Of the Book</option>  
+        <option value="AuthorName">Author Name</option>
+        <option value="Price">Price</option>
+    </select>
+
+    <label for="down">Give name of the book:</label>
+    <input type="text" id="down" name="down" required>
+
+    <label for="up">Updated Element:</label>
+    <input type="text" id="up" name="up" required>
+
+    <input type="submit" value="Update">
+</form>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library User Dashboard</title>
+    <style>
+        /* Resetting basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the body with gradient and background shapes */
+        body {
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Background circle shapes */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            opacity: 0.6;
+            z-index: 1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Different circle sizes and positions */
+        .circle.small {
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            left: 10%;
+        }
+        .circle.medium {
+            width: 150px;
+            height: 150px;
+            top: 70%;
+            right: 15%;
+        }
+        .circle.large {
+            width: 200px;
+            height: 200px;
+            bottom: 10%;
+            left: 50%;
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Container for the content box */
+        .container {
+            width: 80%;
+            max-width: 500px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            z-index: 2; /* Positioning above circles */
+        }
+
+        /* Header styling */
+        .container h1 {
+            font-size: 26px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            width: 80%;
+            margin: 12px 0;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Button colors and hover effects */
+        .btn-issue {
+            background-color: #007bff;
+        }
+
+        .btn-profile {
+            background-color: #28a745;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-issue:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-profile:hover {
+            background-color: #218838;
+        }
+
+        /* Styling for links */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Circles -->
+    <div class="circle small"></div>
+    <div class="circle medium"></div>
+    <div class="circle large"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Welcome to the Library</h1>
+        <p>Please choose an option:</p>
+        
+        <a href="issuebooks" class="btn btn-issue">Issue Books</a>
+        <a href="ProfileVeiw" class="btn btn-profile">View Profile</a>
+    </div>
+
+</body>
+</html>
